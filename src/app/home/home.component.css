@@ -1,0 +1,65 @@
+.call-to-action{
+	height:100px;
+ background: rgb(0, 71, 134);
+}
+.inner.link_banner {
+				    margin: 0 auto;
+				    text-align: center !important;
+				}
+				.call-to-action .outer .inner.link_banner strong {
+				    padding: 0;
+				    margin-bottom: 15px;
+				    			}
+.call-to-action .outer .inner .theme-btn:hover {
+    color: rgb(255, 255, 255) !important;
+    background: none;
+}
+.call-to-action .outer .inner .theme-btn {
+    position: relative;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    color: rgb(0, 82, 156);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: verdana;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 5px 10px 0px;
+    padding: 6px 40px;
+    background: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+}
+.call-to-action .outer .inner.link_banner strong {
+    padding: 24px;
+    margin-bottom: 15px;
+}
+.call-to-action .outer .inner strong {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-size: 22px;
+    padding-right: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    z-index: 3;
+}
+.featured-projects {
+    position: relative;
+    background: #f6f6f6;
+    padding: 50px 0px;
+}
+.featured-project-column .image-box img {
+    position: relative;
+    display: block;
+    width: auto;
+    max-height: 200px;
+    margin: 0 auto;
+}
+.featured-project-column .lower-content h4 a {
+    color: #333333;
+}

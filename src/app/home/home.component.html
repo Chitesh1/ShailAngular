@@ -1,0 +1,126 @@
+<section>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://www.shailtech.com/public/images/banner2.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h2>Website Design And Development</h2>
+          <h5 class="light grey-text text-lighten-3">Professional And Creative Website Development</h5>
+          <button class="btn btn-primary">Contact Us</button>
+        </div>
+      </li>
+      <li>
+        <img src="https://www.shailtech.com/public/images/banner3.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Mobile App Development</h3>
+          <h5 class="light grey-text text-lighten-3">We Develop Native Application For Ios and Android Mobile Platform</h5>
+          <button class="btn btn-primary">Contact Us</button>
+        </div>
+      </li>
+      <li>
+        <img src="https://www.shailtech.com/public/images/gfg.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Seo & Internet Marketing</h3>
+          <h5 class="light grey-text text-lighten-3">SEO,SMM,SMO And ORM</h5>
+          <button class="btn btn-primary">Contact Us</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="about-section">
+			<div class="container">
+				<div class="sec-title">
+					<h2><strong>Fast-Growing </strong>&amp; Innovative <strong>Web</strong> And <strong>Digital Marketing</strong> Agency</h2>
+				</div>
+				<div class="content-outer">
+					<div class="text"><p>Shail Tech delivers web design and development solutions that are attractive and future-proof. Our websites are not just designed with users in mind - each project is responsive and SEO-friendly to assist with your search engine rankings. </p></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="outer-box">
+					<div class="row clearfix">
+						<div class="centered-icon-column col-md-4 col-sm-6 col-xs-12">
+							<div class="inner-box">
+								<div class="icon-box"><span class="flaticon-briefcase"><i class="fa fa-briefcase medium" aria-hidden="true"></i></span></div>
+								<b><h3>WEB DEVELOPMENT</h3></b>
+								<div class="text"><h5>Our expert team of Website Developers &amp; Digital Strategists use cutting edge technology &amp; best practices to create custom sites that increase user engagement.</h5>
+								</div>
+							</div>
+						</div>
+						<div class="centered-icon-column col-md-4 col-sm-6 col-xs-12">
+							<div class="inner-box">
+								<div class="icon-box"><span class="flaticon-tool"><i class="fa fa-cog medium" aria-hidden="true">
+									
+								</i></span></div>
+								<b><h3>MOBILE APPLICATION</h3></b>
+								<div class="text"><h5>We create a mobile app experience that taps into your audience and grows your business online. Consider building a new app with our team..</h5>
+							</div>
+							</div>
+						</div>
+						<div class="centered-icon-column col-md-4 col-sm-6 col-xs-12">
+							<div class="inner-box">
+								<div class="icon-box"><span class="flaticon-technology-7"><i class="fa fa-lightbulb-o medium" aria-hidden="true"></i></span></div>
+								<b><h3>SEO</h3></b>
+								<div class="text"><h5>SEO (On page &amp; off page) Optimization makes your site extra visible to search engines, which in turn makes it more simply accessible to impending customers..</h5>
+								</div>
+							</div>
+						</div>
+						<div class="centered-icon-column col-md-4 col-sm-6 col-xs-12">
+							<div class="inner-box">
+								<div class="icon-box"><span class="flaticon-security"><i class="fa fa-shield medium" aria-hidden="true"></i></span></div>
+								<b><h3>WEB DESIGN</h3></b>
+								<div class="text"><h5>Flexible as in mobile phone friendly, Responsive websites offer a better user understanding which completely affects search engine optimization..</h5>
+							</div>
+							</div>
+						</div>
+						<div class="centered-icon-column col-md-4 col-sm-6 col-xs-12">
+							<div class="inner-box">
+								<div class="icon-box"><span class="flaticon-drink-2"><i class="fa fa-glass medium" aria-hidden="true"></i></span></div>
+								<b><h3>WEB HOSTING</h3></b>
+								<div class="text"><h5>ShailTech provides the most affordable approach to world class and stable cPanel web hosting solutions. Inexpensive, reliable, and feature-rich! </h5></div>
+							</div>
+						</div>
+						<div class="centered-icon-column col-md-4 col-sm-6 col-xs-12">
+							<div class="inner-box">
+								<div class="icon-box"><span class="flaticon-lock"><i class="fa fa-lock medium" aria-hidden="true">
+								</i></span></div>
+								<b><h3>SOCIAL MEDIA MARKETING</h3></b>
+								<div class="text"><h5>Our Social Media Marketing services center of the efforts for creating content that attracts attention of your consumers and further encourages them to share the content across.</h5></div>
+							</div>
+						</div>	
+					</div>
+			</div> 
+	</div>
+</section>  
+<section class="call-to-action">
+	<div class="outer">
+		<div class="inner link_banner">
+			<div class="layer-left"></div>
+			<div class="layer-right"></div>
+			<strong>We dare you to join our team and give wings to your career</strong>
+			<a href="https://www.shailtech.com/career" class="theme-btn" target="_blank">Join us</a>
+	   </div>
+   </div>
+</section>
+<section class="featured-projects">
+	<div class="container">
+		<!--Section Title-->
+		<div class="sec-title" align="center">
+			<h2><strong>SERVICES</strong> WHAT WE PROVIDE</h2>
+		</div>
+		<ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" 
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <img src="{{ slide.img }}" alt="" width="auto" height="200px">
+              <h3>{{slide.text}}</h3>
+              <p>{{slide.par}}</p>
+        </div>
+    </ngx-slick-carousel>
+	</div>
+</section>
